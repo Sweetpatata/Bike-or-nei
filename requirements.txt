@@ -8,4 +8,3 @@ folium
 streamlit_folium
 tensorflow-macos==2.10.0; sys_platform == 'darwin' and 'ARM' in platform_version
 datetime
-urllib
