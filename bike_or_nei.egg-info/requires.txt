@@ -1,0 +1,11 @@
+uvicorn
+Pandas
+ipdb
+matplotlib
+numpy
+seaborn
+scikit-learn
+yapf
+
+[:sys_platform == "darwin" and "ARM" in platform_version]
+tensorflow-macos==2.10.0

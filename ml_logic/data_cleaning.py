@@ -2,13 +2,10 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-from datetime import datetime, date, timezone
+from datetime import datetime, date, timezone, timedelta
 import glob
 
 def clean_data(folder_path):
-    '''
-    Function to clean data from raw files
-    '''
     files = glob.glob(f'{folder_path}/*.csv')
     df_raw = pd.DataFrame()
     for file in files:
@@ -33,7 +30,7 @@ def clean_data(folder_path):
     df_all.reset_index(inplace=True)
     df_all.columns = [['Station_Id', 'Date', 'Trips_in', 'Trips_out']]
     df_all.columns = [name[0] for name in df_all.columns]
-    df_all['Out_Inn'] = df_all['Trips_out'] - df_all['Trips_in']
+    df_all['In_Out'] = df_all['Trips_in'] - df_all['Trips_out']
 
     # Convert the Date column back to datetime
     df_all['Date'] = pd.to_datetime(df_all['Date'])
@@ -49,25 +46,18 @@ def get_date_feature(cleaned_df):
 
     return cleaned_df
 
-def get_imput(df, month_list):
+def imput_missing_data(df_all):
     '''
     Make a dataframe as imput for the months that lacking data
     Input:
-    - The dataframe that have values to calculate average from
-    - List of months that need to be imputed
+    - The dataframe that have values to get from
     '''
-    df_12 = df[df['Month'].isin(month_list)]
-    df_12['Day'] = df_12['Date'].dt.day
-    df_imput = df_12.groupby(['Station_Id', 'Month', 'Day']).agg('mean')
-    df_imput.reset_index(inplace=True)
-    df_imput[['Trips_in','Trips_out']] = df_imput[['Trips_in','Trips_out']].apply(pd.Series.round)
-    df_imput['Out_Inn'] = df_imput['Trips_out'] - df_imput['Trips_in']
-    df_imput['Year'] = '2020'
-    df_imput['Date'] = pd.to_datetime(df_imput[['Day','Month','Year']])
-    df_imput['day_of_week'] = df_imput['Date'].dt.dayofweek
-
-    return df_imput[['Station_Id', 'Date', 'Trips_in', 'Trips_out', 'Out_Inn', 'day_of_week',
-       'Month']]
+    df_12 = df_all[(df_all['Date'] >= '2020-12-30') & (df_all['Date'] <= '2021-02-26')]
+    df_12['Date_new'] = df_12['Date'] - timedelta(days=364)
+    df_12 = df_12.drop(columns=['Date'])
+    df_12 = df_12.rename({'Date_new':'Date'}, axis=1)
+    df_12['Month'] = df_12['Date'].dt.month
+    return df_12
 
 
 def merge_imput(df, df_imput):
@@ -86,4 +76,40 @@ def station_info(df):
                                              'start_station_longitude':[('lon', 'first')],
                                              'start_station_name':[('name', 'first')],
                                              'start_station_description':[('description', 'first')]})
-    return station.droplevel(level=0, axis=1)
+    station = station.droplevel(level=0, axis=1)
+    return station.reset_index()
+
+def get_all_unique_station(df_cleaned):
+    '''
+    Function to turn the cleaned dataframe in to a dictionary with
+    '''
+    df_dict = {}
+    for station in df_cleaned['Station_Id'].unique():
+        df_station = df_cleaned[df_cleaned['Station_Id'] == station]
+        df_station.set_index('Date', inplace=True)
+        df_station = df_station.drop(columns='Station_Id')
+        df_dict["{}".format(station)] = df_station
+    return df_dict
+
+def clean_weather_data(weather_file_path):
+    df = pd.read_csv(weather_file_path)
+    df['dt_iso'] = df['dt_iso'].apply(lambda x: x.split(' ')[0])
+    df_grouped_by_day = pd.DataFrame(df.groupby('dt_iso').agg({'temp_min':'min',
+                                                           'temp_max':'max',
+                                                           'wind_speed':'mean',
+                                                           'rain_1h':'sum',
+                                                           'snow_1h':'sum'}))
+    historic_weather_df = df_grouped_by_day.reset_index()
+    historic_weather_df = historic_weather_df.rename({'dt_iso':'date',
+                                                  'wind_speed':'wind_speed_avg',
+                                                  'rain_1h':'rainfall_total',
+                                                  'snow_1h':'snow_total'}, axis=1)
+    return historic_weather_df
+
+def merge_weather(df_bike, df_weather):
+    df_bike['temp_min'] = df_bike['Date'].map(df_weather.set_index('Date')['temp_min'])
+    df_bike['temp_max'] = df_bike['Date'].map(df_weather.set_index('Date')['temp_max'])
+    df_bike['wind_speed_avg'] = df_bike['Date'].map(df_weather.set_index('Date')['wind_speed_avg'])
+    df_bike['rainfall_total'] = df_bike['Date'].map(df_weather.set_index('Date')['rainfall_total'])
+    df_bike['snow_total'] = df_bike['Date'].map(df_weather.set_index('Date')['snow_total'])
+    return df_bike

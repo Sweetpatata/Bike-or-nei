@@ -1,0 +1,280 @@
+,start_station_id,lat,lon,name,description
+0,377,59.915667,10.7775665,Tøyenparken,ved Caltexløkka
+1,378,59.92984300295666,10.711284727205708,Colosseum Kino,langs Fridtjof Nansens vei
+2,380,59.93923,10.75917,Bentsebrugata,rett over busstoppet
+3,381,59.91252,10.76224,Grønlands torg,ved Tøyenbekken
+4,382,59.92958561753996,10.732839000000013,Stensgata,ved trikkestoppet
+5,383,59.934936,10.749466,Arkitekt Rivertz Plass,langs Uelands gate
+6,384,59.919463,10.743829,Vår Frelsers gravlund sør,langs Ullevålsveien
+7,385,59.918632,10.757867,Søndre gate,ved Ankerbrua
+8,386,59.930596,10.714778,Slemdalsveien,ved Majorstuen T-bane
+9,387,59.914586,10.735453,Studenterlunden,langs Karl Johan
+10,388,59.9163309,10.716349,Skovveien,langs Frognerveien
+11,389,59.9205528,10.7342854,Pilestredet Studenthus,ved Stensberggata
+12,390,59.91424026794647,10.732771354719745,Saga Kino,langs Olav Vs gate
+13,391,59.9268706,10.7384634,St. Hanshaugen park vest,ved busstoppet Colletts gate
+14,392,59.91018085263352,10.751698750995615,Sjøsiden ved fontenen,Oslo S
+15,393,59.939244,10.774319,Hans Nielsen Hauges plass,langs Hans Nielsen Hauges gate
+16,394,59.943777539367225,10.760121127577955,Bjølsen Studentby,ved rundkjøringen
+17,395,59.9261831,10.7098327,Frogner Tennisklubb,ved inngangen til tennisbanen
+18,396,59.91300035973293,10.746760585982289,Kirkeristen,ved Torggata
+19,397,59.94671044754387,10.773805285879131,Storo Storsenter,langs Vitaminveien
+20,398,59.92843404417577,10.75943014633117,Ringnes Park,ved Sannergata
+21,399,59.929545,10.7489862,Uelands gate,Ved Ulvetrappen (Ilatrappen)
+22,400,59.919927,10.735428,OsloMet,langs Pilestredet
+23,401,59.920259,10.760629,Lille Schous plass,lengst vekk fra rundkjøring
+24,402,59.93087712510462,10.791823716034967,Lørenveien,sør for Lørenparken
+25,403,59.921768,10.730476,Parkveien,ved trikkestoppet
+26,404,59.914306,10.720202,Oslo Handelsgymnasium,ved Solligata
+27,405,59.92808,10.708767,Frognerbadet,langs Middelthuns gate
+28,406,59.92507,10.775996,Carl Berners plass sør,langs Finnmarkgata
+29,407,59.937743,10.751648,Sagene bussholdeplass,langs Kierschovs gate
+30,408,59.914943,10.773977,Tøyen skole,forsiden av skolebygget
+31,409,59.940398,10.730036,John Colletts plass,ved Sognsveien
+32,410,59.929005,10.7496755,Landstads gate,langs Uelands gate
+33,411,59.923240042155456,10.792831438028704,Hasle Torg,ved busstoppet
+34,412,59.917866,10.754898,Jakob kirke,langs Torggata
+35,413,59.929045,10.716926,Majorstuen,på Vinkelplassen
+36,414,59.910242,10.73857,Kontraskjæret,ved Christiania Torv
+37,415,59.929542,10.781053,Sinsenveien,ved Kongehellegata
+38,416,59.932383,10.741475,Tannlegehøyskolen,langs Geitmyrsveien
+39,417,59.922485,10.720896,Uranienborgparken,langs Holtegata
+40,418,59.907674,10.686843,Norsk Folkemuseum,utenfor inngangen
+41,419,59.9141252,10.751824,Storgata,i starten av Youngs gate
+42,420,59.94032925181832,10.766136667493829,Bjølsendumpa,langs Treschows gate
+43,421,59.92806670615684,10.751202636819611,Alexander Kiellands Plass,langs Maridalsveien
+44,422,59.923703,10.740542,St. Hanshaugen,langs Waldemar Thranes gate
+45,423,59.920335,10.760804,Schous plass,nærmest rundkjøringen
+46,424,59.9256113,10.760926,Birkelunden,langs Seilduksgata
+47,425,59.932792,10.734457,Adamstuen,ved trikkestoppen
+48,426,59.91728078292675,10.708375798767436,Gimle Kino,ved Frogner Kirke
+49,427,59.920218,10.717978,Briskeby,ved Uranienborg skole
+50,428,59.9193337,10.6968953,Olav Kyrres plass,ved den sveitsiske ambassade
+51,429,59.92208,10.68588,Thune,ved bomringen
+52,430,59.91372007130073,10.735886645853412,Spikersuppa Vest,ved Nasjonalteateret
+53,431,59.927292,10.773185,Chr. Michelsens Gate,ved Fjellgata
+54,432,59.924821,10.739909,St. Hanshaugen park sør,ved dammen
+55,433,59.931828,10.748745,Ila,langs Uelandsgt ved Colletts
+56,434,59.9358883,10.7350062,Lindern,krysset ved Kirkeveien og Stensgata
+57,435,59.915424,10.714577,Fram-gården,langs Bygdøy Allé
+58,436,59.9244031,10.7130691,Vestkanttorvet,langs Tidemands gate
+59,437,59.91546786564256,10.751140873016311,Sentrum Scene,ved Arbeidersamfunnets plass
+60,438,59.949239,10.768576,BI Nydalen,ved hovedinngangen
+61,439,59.9283928,10.7559693,Mølleparken,ved Sannerbrua
+62,440,59.9172088,10.7622135,Lakkegata,ved Sundtkvartalet
+63,441,59.903989,10.741077,Vippetangen øst,nærmest Operaen
+64,442,59.92251,10.75101,Vulkan,ved Maridalsveien
+65,443,59.91015446696496,10.751980909227372,Sjøsiden ved trappen,Oslo S
+66,444,59.925265,10.750462,AHO,langs Maridalsveien
+67,445,59.921673,10.67666,Sjølyst,Drammensveien ved rundkjøring
+68,446,59.925471317049954,10.73121932213806,Bislett Stadion,ved rundkjøringen
+69,447,59.904473,10.786167,Kværnerbyen,langs Smeltedigelen
+70,448,59.91218291295141,10.7544337247013,Oslo Plaza,ved rundkjøringen
+71,449,59.91357497092093,10.726229742333288,Ruseløkkgården,langs Løkkeveien
+72,450,59.919524,10.70884,Elisenberg,ved holdeplassen
+73,451,59.929419,10.726195,Suhms gate,ved Oslo døvekirke
+74,452,59.903989,10.740627,Vippetangen vest,nærmest Rådhuset
+75,453,59.92753764682686,10.71026280326126,Frogner Stadion,ved hovedinngangen
+76,454,59.9198098,10.651118,Furulund,langs Vækerøveien
+77,455,59.922337,10.7617503,Sofienbergparken sør,langs Sofienberggata
+78,456,59.9103558,10.7051061,Frognerstranda,ved Kongen Marina
+79,457,59.9230577,10.7717192,Trondheimsveien,ved trikkestoppet
+80,458,59.928349,10.77837,Jenny Braatens Plass,langs Rosenhoffgata
+81,459,59.9281319,10.71842,Valkyrieplassen,ved Bogstadveien
+82,460,59.91541769802439,10.76933022142641,Botanisk Hage sør,langs Jens Bjelkes gate
+83,461,59.908576,10.786856,Vålerenga,langs Ingeborgs gate
+84,462,59.92714,10.730981,Stensparken,ved Sporveisgata
+85,463,59.9207284,10.7594857,Schous plass trikkestopp,ved biblioteket
+86,464,59.90580676630004,10.753656509579288,Sukkerbiten,ved gangbroen
+87,465,59.909006,10.75618,Bjørvika,under broen Nylandsveien
+88,466,59.937913,10.73048,Ullevålsalléen,langs Sognsveien
+89,468,59.912793405455375,10.710103028570302,Skillebekk,langs Drammensveien
+90,469,59.920852,10.733357,Studentparlamentet,ved Frydenlund holdeplass
+91,470,59.92979845370007,10.743540765932096,St. Hanshaugen park nord,krysset Colletts gt / Geitmyrsveien
+92,471,59.932432498521095,10.721762294477472,Marienlyst,ved bensinstasjon
+93,472,59.9378,10.7541,Arendalsgata,over veien fra Sagen Kirke
+94,473,59.926697,10.716195,Majorstuveien,langs Maries gate
+95,474,59.940873733543725,10.720778851520524,Blindern studentparkering,rett ved Blindern Studenterhjem
+96,475,59.9146509,10.7598719,Hausmanns bru,langs Nylandsveien
+97,476,59.919111,10.736179,Edvard Storms gate,ved Pilestredet
+98,477,59.91537003977052,10.748493387102522,Møllergata,rett over Youngstorget
+99,478,59.911901,10.749929,Jernbanetorget,Europarådets plass
+100,479,59.909467,10.722509,Tjuvholmen,ved Bryggegangen
+101,480,59.9121109,10.7661939,Helga Helgesens plass,langs Grønlandsleiret
+102,481,59.910924,10.736215,Rådhusgata,ved Kontraskjæret trikkestopp
+103,482,59.952868,10.766483,Nydalen,langs Gjerdrums vei
+104,483,59.915451,10.758328,Hausmanns gate,ved Røde Kors
+105,484,59.92033,10.683814,Karenlyst allé,ved Skabos vei
+106,485,59.911453,10.776072,Sommerfrydhagen,langs Jens Bjelkes gate
+107,486,59.935342,10.726472,Det Teologiske fakultet,langs Blindernveien
+108,487,59.926929,10.776971,Carl Berners plass nord,ved Hasleveien
+109,488,59.93507,10.76915,Torshovparken vest,langs Per Kvibergs gate
+110,489,59.91598309274519,10.75155119076095,Torggata,ved Bernt Ankers gate
+111,491,59.91366109486603,10.75729364846211,Brugata,ved Chr Kroghs gate
+112,492,59.9131792,10.7607798,Goethe Institut,ved Grønland
+113,493,59.9243639,10.7615858,Sofienbergparken nordvest,langs Helgesens Gate
+114,494,59.9108469,10.7303766,Rådhusbrygge 4,ved Nesoddbåten
+115,495,59.91351552854147,10.757334670552268,Vaterlandsparken,langs Brugata
+116,496,59.937957367051965,10.719488529430388,Fysikkbygningen,ved Sem Sælands vei
+117,497,59.919252,10.774712,Sirkustomta,langs Finnmarksgata
+118,498,59.92763407981436,10.799249379762283,HasleLinje,ved Anders Winsvolds vei
+119,499,59.925488,10.746058,Bjerregaards gate,ovenfor Fredrikke Qvams gate
+120,500,59.9172794,10.7581553,Anker Hotel,langs Storgata
+121,501,59.935995,10.765413,Krebs' gate,ved Vogts gate
+122,502,59.9360307,10.7364516,Ullevål sykehus,langs Kirkeveien
+123,503,59.92760586837719,10.76598469881135,Fagerheimgata,ved Dælenenga busstopp
+124,505,59.93215,10.723478,Marienlystparken,langs Kirkeveien
+125,506,59.92012811804052,10.768875408563598,Botanisk Hage vest,ved Blytts gate
+126,507,59.919179,10.764162,Jens Bjelkes gate,langs Trondheimsveien
+127,508,59.92985724219502,10.71456623677068,Majorstuen T-bane,ved passasje mot Sørkedalsveien
+128,509,59.912711,10.735595,Kjeld Stubs gate,ved hjørnet Tordenskiolds gate
+129,511,59.915088,10.7222803,Henrik Ibsens gate,ved Parkveien
+130,512,59.9131891,10.7897605,Ensjø T-bane,langs Ensjøveien
+131,513,59.9273747,10.7960147,Bøkkerveien,ved HasleLinje
+132,514,59.9212063,10.7699892,Sofienberggata,ved Sars gate
+133,515,59.912918,10.732121,Olav Vs gate,Nord for Kronprinsesse Märthas plass
+134,516,59.922839,10.775658,Finnmarksgata,ved Telavåggata
+135,517,59.9433939,10.7482848,Tåsenløkka,langs Uelands gate
+136,518,59.9246852,10.7395045,Ullevålsveien,ved taxi stoppen
+137,519,59.91857814333677,10.703899530059402,Thomas Heftyes plass,ved Bygdøy allé
+138,521,59.9186359,10.7523939,Jess Carlsens gate,ved Hausmanns gate
+139,522,59.9123469,10.7638147,Mandalls gate,ved Grønlandsleiret
+140,523,59.9115945,10.7617736,Tøyenbekken,ved Rubina Ranas gate
+141,524,59.9330870371029,10.703967938028702,Volvat,langs Sørkedalsveien
+142,525,59.937205,10.7605813,Myraløkka Øst,ved Bentsenbrua
+143,526,59.9138973,10.7423101,Lille Grensen,Ved Akersgata
+144,527,59.9123341,10.752292,Biskop Gunnerus' gate,ved Oslo City
+145,528,59.913245,10.743669,Nedre Slottsgate,ved Grensen
+146,529,59.9327726,10.7114661,Friggfeltet,langs Slemdalsveien
+147,530,59.9193095,10.7343051,Holbergs Plass,ved Welhavens gate
+148,531,59.935947,10.681138,Monolittveien,like ved Smestaddammen
+149,532,59.90918420865812,10.81431433498766,Brynseng T-bane,Ved Østensjøveien
+150,533,59.915262,10.7253157,Sørvest for Slottsparken,langs Henrik Ibsens gate
+151,534,59.9102277,10.7208788,Filipstadveien,langs busslommen
+152,535,59.9200421,10.726634,Uranienborgveien,vest for Slottsparken
+153,536,59.9363277,10.7054333,Diakonhjemmet,Diakonveien nær rundkjøring
+154,537,59.9179676629428,10.738628884264756,St. Olavs gate,ved Pilestredet
+155,538,59.9147887,10.7537068,Bernt Ankers gate,ved Storgata
+156,540,59.93363159074286,10.769118139881124,Lilleborgbanen,langs Ole Bulls gate
+157,541,59.9080552,10.7479977,Langkaia,langs Rådhusgata
+158,542,59.9224256,10.7554274,Grünerhagen Nord,ved Sofienberggata
+159,543,59.91381587564694,10.798093360118871,Fyrstikktorget,ved Karoline Kristiansens vei
+160,545,59.9119691,10.7478583,Arkaden Sør,langs Dronningens gate
+161,547,59.9112227,10.7481976,Skippergata,ved Karl Johans gate
+162,548,59.91731888534716,10.716909039918278,Colbjørnsens gate,ved Skovveien
+163,549,59.91382393242077,10.745704482209018,Linaaes gate,langs Møllergata
+164,550,59.9261462,10.7310355,Thereses gate,ved Bislett trikkestopp
+165,551,59.922425,10.758182,Olaf Ryes plass,langs Sofienberggata
+166,552,59.90800465532893,10.7625700380287,Trelastgata,ved Nordenga bru
+167,553,59.9139786,10.7474667,Skråninga,ved Torggata
+168,554,59.952659,10.751165,Tåsen Senter,ved Rolf Wickstrøms vei
+169,555,59.9337026,10.7519299,Griffenfeldts gate,ved Colletts gate
+170,556,59.9262242,10.7296246,Pilestredet,ved Sporveisgata
+171,557,59.9141971,10.7428828,Akersgata,ved Grensen
+172,558,59.910974,10.7277001,Dokkveien,ved Støperigata
+173,559,59.923898,10.6760339,Hoffsveien,ved Tingstuveien
+174,560,59.945955,10.710392,Gaustad T-bane,langs Slemdalsveien
+175,561,59.93347989334691,10.726294394131088,Kirkeveien,ved Gørbitz' gate
+176,562,59.917485,10.732128,Slottsparken Øst,ved Nordraaks plass
+177,563,59.9126844,10.7229003,Huitfeldts gate,ved Observatoriegata
+178,564,59.9224222,10.7272388,Oscars gate,ved Hegdehaugsveien
+179,565,59.9309181,10.7728203,Mailundveien,sør for Torshovdalen
+180,566,59.9272941,10.6755714,Hoff terrasse holdeplass,langs Hoffsveien
+181,567,59.94545063370256,10.713867957672134,Forskningsveien,ved SINTEF
+182,568,59.9170851,10.7128796,Frognerveien,ved Vestheimgata
+183,569,59.91783548782385,10.766373769557958,Botanisk hage sør-vest,ved Sars' gate
+184,570,59.9347352,10.7096985,Frøen T-bane,langs Slemdalsveien
+185,571,59.9101207,10.7407129,Over Rådhusgata,langs Nedre Slottsgate
+186,572,59.92226850808104,10.679579749668129,Skøyen,under broen
+187,573,59.91177629920927,10.735113005880237,Tordenskiolds gate,ved Rådhusgata
+188,574,59.9107393,10.7609998,Annette Thommessens Plass,langs Schweigaards gate
+189,575,59.94743324225673,10.732569703704817,Sognsveien,ved Ullevål Stadion T-bane
+190,576,59.911392299457006,10.747281829592453,Dronningens gate,sør for Karl Johan
+191,577,59.9121472,10.7480527,Arkaden Nord,langs Dronningens gate
+192,578,59.922777,10.738655,Hallings gate,langs Dalsbergstien
+193,579,59.924732,10.724628,Bogstadveien,ved Sporveisgata
+194,580,59.939025551395765,10.723002619643406,Georg Morgenstiernes hus,ved Moltke Moes vei
+195,581,59.908227,10.781088,Jordalgata,ved Galgeberg busstopp
+196,582,59.94114763297182,10.750775120272449,Stavangergata,ved Uelands gate
+197,583,59.90707579234818,10.779164402446728,Galgeberg,langs St. Halvards gate
+198,584,59.9268942,10.7207894,Henrik Wergelands allé,ved Bogstadveien
+199,585,59.92114988507087,10.754714015938562,Nordre gate,ved Grünerbrua
+200,586,59.9294565845173,10.769121495700826,Københavngata busstopp,ved Fagerheim tennisklubb
+201,587,59.9191421,10.7196414,Riddervoldplass,ved Camilla Colletts vei
+202,588,59.9180141,10.7184345,Meltzers gate,langs Skovveien
+203,589,59.898126,10.675096,Huk,ved hovedparkeringen
+204,590,59.9294351,10.7136816,Majorstua skole,langs Bogstadveien
+205,591,59.92464487862039,10.781726510450724,Grenseveien,ved Togbru
+206,592,59.94558091179507,10.760323881579982,Badebakken,langs Maridalsveien
+207,593,59.9392403070359,10.768771317790996,Bjølsen mølle,langs Sandakerveien
+208,594,59.915182,10.782129,Kampen park Øst,langs Bøgata
+209,595,59.914871,10.701037,Skarpsnoparken,langs Drammensveien
+210,596,59.93102013218461,10.736036647971048,Idioten,langs Ullevålsveien
+211,597,59.920995,10.750358,Fredensborg,ved rundkjøringen
+212,598,59.923229,10.766171,Sofienbergparken nord,langs Helgesens gate
+213,599,59.910331,10.75011,Paléhaven,langs Strandgata
+214,600,59.905323,10.7689579,Dyvekes bru,ved skatepark
+215,601,59.9534114,10.7577241,Rolf Wickstrøms vei,ved Bergrådveien
+216,602,59.9304645,10.6757833,Jarlsborgveien,ved Hoffsveien
+217,603,59.9225392,10.7045406,Frogner plass,i rundkjøringen
+218,605,59.9167376,10.779916,Økernveien,ved Ensjøveien bussholdeplass
+219,606,59.9339754,10.7521029,Stockfleths gate,ved Griffenfeldts gate
+220,607,59.93277225626508,10.758594919923468,Marcus Thranes gate,ved Akerselva
+221,608,59.93068679863987,10.746273349149249,Colletts gate,ved Diriks gate
+222,609,59.9110506,10.7493737,Fred Olsens gate,ved Karl Johans gate
+223,610,59.9099822,10.7914482,Sotahjørnet,ved Strømsveien
+224,611,59.908454,10.741869,Bankplassen,ved Kirkegata
+225,612,59.91662195885618,10.783309055819714,Ensjøveien,ved turvei
+226,613,59.92095635370271,10.714055629614734,Schives gate,ved Arno Bergs plass
+227,614,59.938863086921295,10.780603250331886,Sinsen T-bane,langs Hans Nielsen Hauges gate
+228,615,59.9135227,10.7301061,Munkedamsveien,ved Haakon VIIs gate
+229,616,59.90692216719828,10.746530272588243,Salt,ved Langkaia
+230,617,59.92716771401357,10.749754560118864,Bjerregaardsgate Øst,ved Uelands gate
+231,618,59.94247260310697,10.723715245368956,Bak Niels Treschows hus sør,nærmest trikkestopp
+232,619,59.94278024854256,10.722993731144015,Bak Niels Treschows hus nord,ved parkeringsplassen
+233,620,59.92377440938114,10.734712874574,Bislettgata,ved Sofies Gate
+234,621,59.93285662158759,10.777633472422016,Torshovdalen øst,ved Mailundveien rundkjøring
+235,622,59.9238826,10.7313627,Pilestredet 63,ved trikkestoppet
+236,623,59.9150596,10.7312715,7 Juni Plassen,langs Henrik Ibsens gate
+237,624,59.9287502718149,10.767546377298158,Dælenenggata,ved Fagerheimgata
+238,625,59.91336,10.737663,Spikersuppa Øst,ved Stortinget
+239,626,59.9204038,10.691147,Drammensveien,ved Ingar Nilsens vei
+240,627,59.922723981014094,10.67862514536896,Skøyen Stasjon,langs Hoffsveien
+241,734,59.9156603,10.7622812,Nylandsveien,ved Urtegata
+242,735,59.90321254732584,10.7673442932541,Oslo Hospital,ved trikkestoppet
+243,737,59.908255,10.7678,Munkegata trikkestopp,langs Oslo gate
+244,738,59.9034528,10.777958,Lodalen busstopp,langs Dyvekes vei
+245,739,59.91652053839767,10.749202233135232,Hammersborg Torg,langs Møllergata
+246,742,59.924342,10.79285,Hasle,langs Økernveien
+247,744,59.9315302,10.762169,Hallénparken,ved Vogts gate
+248,746,59.919001,10.692321,Bygdøy allé,ved parkeringsplassen
+249,748,59.914145,10.715505,Hydroparken,langs Drammensveien
+250,787,59.91015615055511,10.743456971511703,Kirkegata 15,ved Kunnskapsdepartamentet
+251,970,59.91320242563816,10.767579386407874,Enerhaugen,ved Sørligata
+252,1009,59.94274210647367,10.70383303125402,Borgenveien,ved Holmenveien
+253,1023,59.9147672,10.740971,Professor Aschehougs plass,ved Kristian IVs gate
+254,1101,59.91065301806209,10.737365277561024,Stortingstunellen,langs Rådhusgata
+255,1755,59.91118372188379,10.730034556850455,Aker Brygge,ved trikkestopp
+256,1919,59.90591083488326,10.778592132296495,Kværnerveien,Ved Kværnerveien 5
+257,2270,59.92883258499495,10.799770383800876,Lørenporten,ved Wurth
+258,2280,59.913150534075015,10.732281291700131,Klingenberggata,By Olav V street
+259,2304,59.91178403655783,10.783884345957915,Hedmarksgata,ved Jordal Amfi
+260,2305,59.92774803110845,10.761265771390583,Hesselbergs Gate,ved Toftes Gate
+261,2306,59.93097164065915,10.801829756346931,Økern Portal,ved Dag Hammarskjölds vei
+262,2307,59.946219381760216,10.724626314653564,Domus Athletica,ved Vestgrensa Studentby
+263,2308,59.91459878869395,10.753398500006654,Gunerius,utenfor Storgata 33
+264,2309,59.924959978447504,10.812061140924698,Ulven Torg,ved ulvenveien
+265,2315,59.90691970255054,10.760311802881915,Rostockgata,utenfor Bjørvika visningssenter
+266,2328,59.91252237023375,10.750910185807754,The Hub,Mellom Oslo City og The Hub hotel
+267,2329,59.91271286014364,10.727170827087008,Via Vika,mellom bygningene ved Via Vika
+268,2330,59.91323316606503,10.749958763650312,Stjerneplassen,Krysset Skippergata Storgata
+269,2332,59.91629601075576,10.757376666842816,Krohgstøtten hospital,Hjørnet av Hausmannsgata and Storgata
+270,2333,59.90725889890288,10.75488466358962,Akerselvallmenningen,øst for Operaen
+271,2334,59.916544926082935,10.757428972017069,Nybrua holdeplass,Vest for Storgata der den krysser Hausmanns gate
+272,2337,59.91591543378553,10.73783499027732,Universitetsgata,Hjørnet av Universitetsgata and Kristian IVs Gate
+273,2339,59.91564920880896,10.761724502548104,Elgsletta,langs Nylandsveien
+274,2340,59.92024767905539,10.793540704010042,Tiedemannsparken,langs Grenseveien ved fotgjengerbru
+275,2347,59.89843428245928,10.674398461025874,Huk 2,stativ nærmest stranden (markert 2)
+276,2349,59.90294292465149,10.698048967006343,Maritimt Museum,langs Bygdøynesveien 
+277,2350,59.94022899411701,10.716856460117071,Blindern T-Bane,ved Blindernveien
+278,2351,59.95208441268443,10.727852791011172,Sogn Studentby,Hjørnet av Sognsveien og Klaus Torgårds Vei

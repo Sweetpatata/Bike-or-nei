@@ -6,6 +6,8 @@ from colorama import Fore, Style
 from tensorflow.keras import Model, models
 import pandas as pd
 
+from ml_logic.params import LOCAL_REGISTRY_PATH
+
 
 def save_model(model: Model = None,
                params: dict = None,
@@ -13,10 +15,6 @@ def save_model(model: Model = None,
     """
     persist trained model, params and metrics
     """
-
-    #timestamp = time.strftime("%Y%m%d-%H%M%S")
-
-    #print(Fore.BLUE + "\nSave model to local disk..." + Style.RESET_ALL)
 
     # save params
     if params is not None:
@@ -43,13 +41,13 @@ def save_model(model: Model = None,
     return None
 
 
-def load_model(X_new) -> Model:
+def load_model() -> Model:
     """
     load the latest saved model, return None if no model found
     """
 
     station_list = []
-    pred_list = []
+    model_list = []
     # get latest model version
     model_directory = os.path.join(LOCAL_REGISTRY_PATH, "models")
 
@@ -62,8 +60,19 @@ def load_model(X_new) -> Model:
         station_name = model_path[-3:]
         station_list.append(station_name)
         model = models.load_model(model_path)
-        pred_list.append(round(model.predict(X_new)[0][0],0))
+        model_list.append(model)
 
+    model_df = pd.DataFrame(zip(station_list, model_list))
+    model_df.columns = ['Station_Id', 'Model']
+
+    return model_df
+
+def pred(X_new, model_df):
+    station_list = []
+    pred_list = []
+    for i in range(len(model_df)):
+        station_list.append(model_df['Station_Id'][i])
+        pred_list.append(round(model_df['Model'][i].predict(X_new)[0][0],0))
     pred_df = pd.DataFrame(zip(station_list, pred_list))
-
+    pred_df.columns = ['Station_Id', 'In_Out']
     return pred_df

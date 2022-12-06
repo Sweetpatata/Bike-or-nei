@@ -6,6 +6,8 @@ import requests
 from datetime import datetime, date, timezone, timedelta
 from sklearn.preprocessing import OneHotEncoder
 
+from ml_logic.params import oslo_lat, oslo_lon
+
 BASE_URL = "https://weather.lewagon.com"
 #oslo_lat = 59.919602443955355
 #oslo_lon = 10.752152108688852
@@ -67,4 +69,8 @@ def transform_forecast():
 
     return cleaned_forecast
 
-transform_forecast()
+def encode_weather(cleaned_forcast_df, col_list, X_train):
+    ohe = OneHotEncoder(sparse = False)
+    ohe.fit(X_train[col_list])
+    cleaned_forcast_df[ohe.get_feature_names_out()] = ohe.transform(cleaned_forcast_df[col_list])
+    return cleaned_forcast_df.drop(columns = col_list)

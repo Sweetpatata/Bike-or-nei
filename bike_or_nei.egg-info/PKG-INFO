@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: bike-or-nei
+Version: 0.0.1
+Summary: RNN prediction of bike usage in Oslo
+Home-page: https://github.com/Sweetpatata/Bike-or-nei
+Author: Bike-or-nei
+Author-email: contact@lewagon.org
+License: MIT

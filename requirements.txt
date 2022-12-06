@@ -1,0 +1,14 @@
+uvicorn
+Pandas
+ipdb
+matplotlib
+numpy
+seaborn
+scikit-learn
+yapf
+folium
+tensorflow-macos==2.10.0; sys_platform == 'darwin' and 'ARM' in platform_version
+datetime
+urllib
+colorama
+mlflow
