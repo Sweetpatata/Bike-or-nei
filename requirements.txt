@@ -16,3 +16,4 @@ numpy
 # glob
 # os
 # urllib
+fsspec
