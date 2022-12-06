@@ -1,9 +1,18 @@
 streamlit
+fastapi
 uvicorn
 requests
 Pandas
-ipdb
-yapf
+#ipdb
+#yapf
 folium
 streamlit_folium
 datetime
+#scikit-learn
+google-cloud-storage
+#tensorflow-macos==2.10.0; sys_platform == 'darwin' and 'ARM' in platform_version # Mac M-chips
+numpy
+# colorama
+# glob
+# os
+# urllib
