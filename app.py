@@ -6,27 +6,26 @@ from streamlit_folium import st_folium
 import folium
 import json
 from branca.element import Template, MacroElement
-import base64
 
 st.set_page_config(layout='wide')
 #st.image('/Users/frederickjohannson''/Desktop/bike_black.jpg')
 
 #background image
-def add_bg_from_local(image_file):
-    with open(image_file, "rb") as image_file:
-        encoded_string = base64.b64encode(image_file.read())
+def add_bg_from_url():
     st.markdown(
-    f"""
-    <style>
-    .stApp {{
-        background-image: url(data:image/{"jpg"};base64,{encoded_string.decode()});
-        background-size: cover
-    }}
-    </style>
-    """,
-    unsafe_allow_html=True
-    )
-add_bg_from_local('/Users/frederickjohannson/code/Sweetpatata/bike-or-nei/app-background-image.jpg')
+         f"""
+         <style>
+         .stApp {{
+             background-image: url("https://storage.googleapis.com/sweet_bucket/app-background-image.jpg");
+             background-attachment: fixed;
+             background-size: cover
+         }}
+         </style>
+         """,
+         unsafe_allow_html=True
+     )
+
+add_bg_from_url()
 
 # tab interface
 #tab1, tab2 = st.tabs(['Prediction', 'Data'])
