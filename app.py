@@ -77,7 +77,7 @@ if st.session_state['df'] is not None:
     #mapping
     df_to_map = station_info.merge(st.session_state['df'], left_on='start_station_id', right_on='Station_Id')
 
-    m = folium.Map(tiles='MapQuest Open Aerial', width=500, height=800,location=[59.918569964063536, 10.750777377179256], zoom_start=13)
+    m = folium.Map(width=500, height=800,location=[59.918569964063536, 10.750777377179256], zoom_start=13)
 
     for i in range(len(df_to_map)):
             if df_to_map['In_Out'][i] < -5:
