@@ -152,6 +152,7 @@ if st.session_state['df'] is not None:
     margin-left: 0;
     line-height: 18px;
     margin-bottom: 2px;
+    color: #200
     }
 .maplegend ul.legend-labels li span {
     display: block;
