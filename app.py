@@ -82,16 +82,16 @@ if st.session_state['df'] is not None:
     for i in range(len(df_to_map)):
             if df_to_map['In_Out'][i] < -5:
                 folium.CircleMarker(location=[df_to_map['lat'][i], df_to_map['lon'][i]],
-                                    tooltip="{}: {} bikes per day".format(df_to_map['name'][i], df_to_map['In_Out'][i]),
+                                    tooltip="{}: {} bikes per day".format(df_to_map['name'][i], int(df_to_map['In_Out'][i])),
                             radius=int(df_to_map['In_Out'][i]*(-1)),
                             color='red', fill=True, fill_color='red').add_to(m)
             elif df_to_map['In_Out'][i] > -5 and df_to_map['In_Out'][i] < 5:
                 folium.Circle(location=[df_to_map['lat'][i], df_to_map['lon'][i]],
-                            tooltip="{}: {} bikes per day".format(df_to_map['name'][i], df_to_map['In_Out'][i]),
+                            tooltip="{}: {} bikes per day".format(df_to_map['name'][i], int(df_to_map['In_Out'][i])),
                             color='gray', fill=True, fill_color='gray').add_to(m)
             else:
                 folium.CircleMarker(location=[df_to_map['lat'][i], df_to_map['lon'][i]],
-                            tooltip="{}: {} bikes per day".format(df_to_map['name'][i], df_to_map['In_Out'][i]),
+                            tooltip="{}: {} bikes per day".format(df_to_map['name'][i], int(df_to_map['In_Out'][i])),
                             radius=int(df_to_map['In_Out'][i]),
                             color='blue', fill=True, fill_color='blue').add_to(m)
 
