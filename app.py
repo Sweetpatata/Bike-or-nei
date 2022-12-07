@@ -15,6 +15,7 @@ import json
 #key = st.secrets.gcp_service_account.key
 
 st.set_page_config(layout='wide')
+st.image('/Users/frederickjohannson''/Desktop/bike_black.jpg')
 
 '''
 # Oslo City Bike
