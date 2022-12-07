@@ -74,11 +74,11 @@ if st.session_state['df'] is not None:
             elif df_to_map['In_Out'][i] > -5 and df_to_map['In_Out'][i] < 5:
                 folium.Circle(location=[df_to_map['lat'][i], df_to_map['lon'][i]],
                             popup=df_to_map['name'][i], tooltip=df_to_map['name'][i],
-                            color='green', fill=True, fill_color='green').add_to(m)
+                            color='gray', fill=True, fill_color='gray').add_to(m)
             else:
                 folium.CircleMarker(location=[df_to_map['lat'][i], df_to_map['lon'][i]],
                             popup=df_to_map['name'][i], tooltip=df_to_map['name'][i],
                             radius=int(df_to_map['In_Out'][i]),
-                            color='yellow', fill=True, fill_color='yellow').add_to(m)
+                            color='blue', fill=True, fill_color='blue').add_to(m)
 
     st_data = st_folium(m, width=1500)
