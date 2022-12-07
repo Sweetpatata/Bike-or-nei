@@ -33,7 +33,7 @@ add_bg_from_url()
 #with tab1:
 
 '''
-# Oslo City Bike - Maintenance Forecast
+# 🚲 Oslo City Bike - Maintenance Forecast 🚲
 '''
 
 st.markdown('**Predict bicycle station usage**')
