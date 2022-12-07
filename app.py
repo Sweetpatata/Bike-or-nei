@@ -43,16 +43,17 @@ if bt1:
         st.session_state['df'] = df
 
 ### detail expander
+#station_info = pd.read_csv('gs://sweet_bucket/station_info.csv')
+#details_df = st.session_state['df'].merge(station_info, left_on='Station_Id', right_on='start_station_id')
+#details_df = details_df.drop(columns=['Unnamed: 0', 'start_station_id'])
+#details_df = details_df.set_index('Station_Id')
+#details_df = details_df.iloc[:, [3,0,4,1,2]]
+#details_df = details_df.rename({'name':'Station', 'In_Out': 'predicted delta', 'description':'Station description'}, axis='columns')
+
+#with st.expander('Details'):
+#    st.dataframe(details_df)
+
 station_info = pd.read_csv('gs://sweet_bucket/station_info.csv')
-details_df = st.session_state['df'].merge(station_info, left_on='Station_Id', right_on='start_station_id')
-details_df = details_df.drop(columns=['Unnamed: 0', 'start_station_id'])
-details_df = details_df.set_index('Station_Id')
-details_df = details_df.iloc[:, [3,0,4,1,2]]
-details_df = details_df.rename({'name':'Station', 'In_Out': 'predicted delta', 'description':'Station description'}, axis='columns')
-
-with st.expander('Details'):
-    st.dataframe(details_df)
-
 
 # mapping
 df_to_map = station_info.merge(st.session_state['df'], left_on='start_station_id', right_on='Station_Id')
