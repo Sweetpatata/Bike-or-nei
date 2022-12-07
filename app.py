@@ -82,4 +82,7 @@ if st.session_state['df'] is not None:
                             radius=int(df_to_map['In_Out'][i]),
                             color='blue', fill=True, fill_color='blue').add_to(m)
 
+    m = add_categorical_legend(m, 'Bike availability', colors = ['red', 'gray', 'blue'],
+                               labels = ['replenish', 'on par', 'abundant'])
+
     st_data = st_folium(m, width=1500)
