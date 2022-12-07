@@ -123,9 +123,9 @@ if st.session_state['df'] is not None:
 <div class='legend-title'>Legend (draggable!)</div>
 <div class='legend-scale'>
   <ul class='legend-labels'>
-    <li><span style='background:red;opacity:0.7;'></span>Big</li>
-    <li><span style='background:orange;opacity:0.7;'></span>Medium</li>
-    <li><span style='background:green;opacity:0.7;'></span>Small</li>
+    <li><span style='background:red;opacity:0.7;'></span>Replenish</li>
+    <li><span style='background:gray;opacity:0.7;'></span>On par</li>
+    <li><span style='background:blue;opacity:0.7;'></span>Abundance</li>
 
   </ul>
 </div>
