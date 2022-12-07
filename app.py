@@ -35,7 +35,7 @@ add_bg_from_url()
 #'''
 # 🚲 Oslo City Bike - Maintenance Forecast 🚲
 #'''
-original_title = '<p style="font-weight: bold; font-family:gotham; color:Black; font-size: 42px;">🚲 Oslo City Bike - Maintenance Forecast 🚲</p>'
+original_title = '<p style="font-weight: bold; font-family:didot; color:Black; font-size: 42px;">🚲 Oslo City Bike - Maintenance Forecast 🚲</p>'
 st.markdown(original_title, unsafe_allow_html=True)
 st.markdown('**Predict bicycle station usage**')
 
