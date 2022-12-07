@@ -33,27 +33,27 @@ with st.form(key='params_for_api'):
 
 date_to_pick = date_to_predict.strftime("%Y-%m-%d")
 
-url = 'https://bike-hzg6p6d3ea-ew.a.run.app'
+url = 'http://localhost:8000/predict'
 if bt1:
     temp = requests.post(url,files={'date':date_to_pick}).content.decode()
     json_object = json.loads(temp)
     df = pd.DataFrame(json_object)
 
-#    if 'df' not in st.session_state:
-#        st.session_state['df'] = df
+    if 'df' not in st.session_state:
+        st.session_state['df'] = df
 
 ### detail expander
+station_info = pd.read_csv('/Users/frederickjohannson/code/Sweetpatata/bike-or-nei/raw_data/station_info.csv')
+details_df = st.session_state['df'].merge(station_info, left_on='Station_Id', right_on='start_station_id')
+details_df = details_df.drop(columns=['Unnamed: 0', 'start_station_id'])
+details_df = details_df.set_index('Station_Id')
+details_df = details_df.iloc[:, [3,0,4,1,2]]
+details_df = details_df.rename({'name':'Station', 'In_Out': 'predicted delta', 'description':'Station description'}, axis='columns')
+
+with st.expander('Details'):
+    st.dataframe(details_df)
+
 #station_info = pd.read_csv('gs://sweet_bucket/station_info.csv')
-#details_df = st.session_state['df'].merge(station_info, left_on='Station_Id', right_on='start_station_id')
-#details_df = details_df.drop(columns=['Unnamed: 0', 'start_station_id'])
-#details_df = details_df.set_index('Station_Id')
-#details_df = details_df.iloc[:, [3,0,4,1,2]]
-#details_df = details_df.rename({'name':'Station', 'In_Out': 'predicted delta', 'description':'Station description'}, axis='columns')
-
-#with st.expander('Details'):
-#    st.dataframe(details_df)
-
-station_info = pd.read_csv('gs://sweet_bucket/station_info.csv')
 
 # mapping
 #df_to_map = station_info.merge(st.session_state['df'], left_on='start_station_id', right_on='Station_Id')
