@@ -120,7 +120,7 @@ if st.session_state['df'] is not None:
     style='position: absolute; z-index:9999; border:2px solid grey; background-color:rgba(255, 255, 255, 0.8);
      border-radius:6px; padding: 10px; font-size:14px; right: 20px; bottom: 20px;'>
 
-<div class='legend-title'>Legend (draggable!)</div>
+<div class='legend-title'>Legend</div>
 <div class='legend-scale'>
   <ul class='legend-labels'>
     <li><span style='background:red;opacity:0.7;'></span>Replenish</li>
@@ -153,7 +153,7 @@ if st.session_state['df'] is not None:
     list-style: none;
     margin-left: 0;
     line-height: 18px;
-    margin-bottom: 2px;
+    margin-bottom: 10px;
     }
   .maplegend ul.legend-labels li span {
     display: block;
