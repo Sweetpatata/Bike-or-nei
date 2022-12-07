@@ -66,16 +66,15 @@ if st.session_state['df'] is not None:
     m = folium.Map(width=500, height=800,location=[59.918569964063536, 10.750777377179256], zoom_start=13)
 
     for i in range(len(df_to_map)):
-            if df_to_map['In_Out'][i] < 0:
+            if df_to_map['In_Out'][i] < -5:
                 folium.CircleMarker(location=[df_to_map['lat'][i], df_to_map['lon'][i]],
                             popup=df_to_map['name'][i], tooltip=df_to_map['name'][i],
                             radius=int(df_to_map['In_Out'][i]*(-1)),
                             color='red', fill=True, fill_color='red').add_to(m)
-            elif df_to_map['In_Out'][i] == 0:
+            elif df_to_map['In_Out'][i] > -5 and df_to_map['In_Out'][i] < 5:
                 folium.Circle(location=[df_to_map['lat'][i], df_to_map['lon'][i]],
                             popup=df_to_map['name'][i], tooltip=df_to_map['name'][i],
-                            radius=int(df_to_map['In_Out'][i]*(-1)),
-                            color='gray', fill=True, fill_color='gray').add_to(m)
+                            color='green', fill=True, fill_color='gray').add_to(m)
             else:
                 folium.CircleMarker(location=[df_to_map['lat'][i], df_to_map['lon'][i]],
                             popup=df_to_map['name'][i], tooltip=df_to_map['name'][i],
