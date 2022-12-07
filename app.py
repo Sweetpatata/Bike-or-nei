@@ -68,7 +68,7 @@ if st.session_state['df'] is not None:
     details_df = details_df.drop(columns=['Unnamed: 0', 'start_station_id'])
     details_df = details_df.set_index('Station_Id')
     details_df = details_df.iloc[:, [3,0,4,1,2]]
-    details_df = details_df.rename({'name':'Station', 'In_Out': 'predicted delta', 'description':'Station description'}, axis='columns')
+    details_df = details_df.rename({'name':'Station', 'In_Out': 'predicted flow: bikes per day', 'description':'Station description'}, axis='columns')
     details_df['predicted flow: bikes per day'] = details_df['predicted delta'].astype(int)
 
     with st.expander('Details'):
