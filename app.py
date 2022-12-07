@@ -10,6 +10,24 @@ from branca.element import Template, MacroElement
 st.set_page_config(layout='wide')
 #st.image('/Users/frederickjohannson''/Desktop/bike_black.jpg')
 
+#background image
+def add_bg_from_url():
+    st.markdown(
+         f"""
+         <style>
+         .stApp {{
+             background-image: url("https://www.pexels.com/photo/blue-abstract-painting-268415/");
+             background-attachment: fixed;
+             background-size: cover
+         }}
+         </style>
+         """,
+         unsafe_allow_html=True
+     )
+
+add_bg_from_url()
+
+# tab interface
 tab1, tab2 = st.tabs(['Prediction', 'Data'])
 
 with tab1:
@@ -52,6 +70,7 @@ with tab1:
         details_df = details_df.iloc[:, [3,0,4,1,2]]
         details_df = details_df.rename({'name':'Station', 'In_Out': 'predicted delta', 'description':'Station description'}, axis='columns')
         details_df['predicted delta'] = details_df['predicted delta'].astype(int)
+
         with st.expander('Details'):
             st.dataframe(details_df)
 
