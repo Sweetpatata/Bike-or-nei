@@ -39,8 +39,8 @@ if bt1:
     json_object = json.loads(temp)
     df = pd.DataFrame(json_object)
 
-    if 'df' not in st.session_state:
-        st.session_state['df'] = df
+#    if 'df' not in st.session_state:
+#        st.session_state['df'] = df
 
 ### detail expander
 #station_info = pd.read_csv('gs://sweet_bucket/station_info.csv')
@@ -56,7 +56,8 @@ if bt1:
 station_info = pd.read_csv('gs://sweet_bucket/station_info.csv')
 
 # mapping
-df_to_map = station_info.merge(st.session_state['df'], left_on='start_station_id', right_on='Station_Id')
+#df_to_map = station_info.merge(st.session_state['df'], left_on='start_station_id', right_on='Station_Id')
+df_to_map = station_info.merge(df, left_on='start_station_id', right_on='Station_Id')
 
 m = folium.Map(width=500, height=800,location=[59.918569964063536, 10.750777377179256], zoom_start=13)
 
