@@ -118,12 +118,12 @@ if st.session_state['df'] is not None:
     style='position: absolute; z-index:9999; border:2px solid grey; background-color:rgba(255, 255, 255, 0.8);
     border-radius:6px; padding: 10px; font-size:14px; right: 20px; top: 20px;'>
 
-<div class='legend-title'>Legend</div>
+<div class='legend-title'></div>
 <div class='legend-scale'>
 <ul class='legend-labels'>
-    <li><span style='background:red;opacity:0.7;'></span>Replenish</li>
-    <li><span style='background:gray;opacity:0.7;'></span>On par</li>
-    <li><span style='background:blue;opacity:0.7;'></span>Abundance</li>
+    <li><span style='background:red;opacity:0.7;'></span>replenish</li>
+    <li><span style='background:gray;opacity:0.7;'></span>on par</li>
+    <li><span style='background:blue;opacity:0.7;'></span>remove</li>
 
 </ul>
 </div>
