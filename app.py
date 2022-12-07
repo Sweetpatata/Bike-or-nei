@@ -11,21 +11,21 @@ st.set_page_config(layout='wide')
 #st.image('/Users/frederickjohannson''/Desktop/bike_black.jpg')
 
 #background image
-def add_bg_from_url():
-    st.markdown(
-         f"""
-         <style>
-         .stApp {{
-             background-image: url("https://storage.googleapis.com/sweet_bucket/app-background-image.jpg");
-             background-attachment: fixed;
-             background-size: cover
-         }}
-         </style>
-         """,
-         unsafe_allow_html=True
-     )
+#def add_bg_from_url():
+#    st.markdown(
+#         f"""
+#         <style>
+#         .stApp {{
+#             background-image: url("https://storage.googleapis.com/sweet_bucket/app-background-image.jpg");
+#             background-attachment: fixed;
+#             background-size: cover
+#         }}
+#         </style>
+#         """,
+#         unsafe_allow_html=True
+#     )
 
-add_bg_from_url()
+#add_bg_from_url()
 
 # tab interface
 #tab1, tab2 = st.tabs(['Prediction', 'Data'])
