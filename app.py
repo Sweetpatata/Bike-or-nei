@@ -11,21 +11,21 @@ st.set_page_config(layout='wide')
 #st.image('/Users/frederickjohannson''/Desktop/bike_black.jpg')
 
 #background image
-#def add_bg_from_url():
-#    st.markdown(
-#         f"""
-#         <style>
-#         .stApp {{
-#             background-image: url("https://storage.googleapis.com/sweet_bucket/app-background-image.jpg");
-#             background-attachment: fixed;
-#             background-size: cover
-#         }}
-#         </style>
-#         """,
-#         unsafe_allow_html=True
-#     )
+def add_bg_from_url():
+   st.markdown(
+        f"""
+        <style>
+        .stApp {{
+            background-image: url("https://storage.googleapis.com/sweet_bucket/app-background-image.jpg");
+            background-attachment: fixed;
+            background-size: cover
+        }}
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
 
-#add_bg_from_url()
+add_bg_from_url()
 
 # tab interface
 #tab1, tab2 = st.tabs(['Prediction', 'Data'])
@@ -82,16 +82,16 @@ if st.session_state['df'] is not None:
     for i in range(len(df_to_map)):
             if df_to_map['In_Out'][i] < -5:
                 folium.CircleMarker(location=[df_to_map['lat'][i], df_to_map['lon'][i]],
-                                    tooltip="{}: {} bikes".format(df_to_map['name'][i], df_to_map['In_Out'][i]),
+                                    tooltip="{}: {} bikes per day".format(df_to_map['name'][i], df_to_map['In_Out'][i]),
                             radius=int(df_to_map['In_Out'][i]*(-1)),
                             color='red', fill=True, fill_color='red').add_to(m)
             elif df_to_map['In_Out'][i] > -5 and df_to_map['In_Out'][i] < 5:
                 folium.Circle(location=[df_to_map['lat'][i], df_to_map['lon'][i]],
-                            popup=df_to_map['In_Out'][i], tooltip=df_to_map['name'][i],
+                            tooltip="{}: {} bikes per day".format(df_to_map['name'][i], df_to_map['In_Out'][i]),
                             color='gray', fill=True, fill_color='gray').add_to(m)
             else:
                 folium.CircleMarker(location=[df_to_map['lat'][i], df_to_map['lon'][i]],
-                            popup=df_to_map['In_Out'][i], tooltip=df_to_map['name'][i],
+                            tooltip="{}: {} bikes per day".format(df_to_map['name'][i], df_to_map['In_Out'][i]),
                             radius=int(df_to_map['In_Out'][i]),
                             color='blue', fill=True, fill_color='blue').add_to(m)
 
