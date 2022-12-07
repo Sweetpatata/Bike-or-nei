@@ -161,7 +161,7 @@ if st.session_state['df'] is not None:
     height: 16px;
     width: 30px;
     margin-right: 5px;
-    margin-left: 0;
+    margin-left: 5px;
     border: 1px solid #999;
     }
   .maplegend .legend-source {
