@@ -50,6 +50,7 @@ with tab1:
         details_df = details_df.drop(columns=['Unnamed: 0', 'start_station_id'])
         details_df = details_df.set_index('Station_Id')
         details_df = details_df.iloc[:, [3,0,4,1,2]]
+        details_df['predicted delta'] = int(details_df['predicted delta'])
         details_df = details_df.rename({'name':'Station', 'In_Out': 'predicted delta', 'description':'Station description'}, axis='columns')
 
         with st.expander('Details'):
