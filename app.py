@@ -32,9 +32,6 @@ add_bg_from_url()
 
 #with tab1:
 
-#'''
-# 🚲 Oslo City Bike - Maintenance Forecast 🚲
-#'''
 original_title = '<p style="font-weight: bold; font-family:Source Sans Pro; color:Black; font-size: 42px;">🚲 Oslo City Bike - Maintenance Forecast 🚲</p>'
 st.markdown(original_title, unsafe_allow_html=True)
 sub_title = '<p style="color:Black;">Predict bicycle station usage</p>'
@@ -44,10 +41,10 @@ today = datetime.today()
 td = timedelta(days=5)
 max_day = today + td
 
-date_title = st.markdown('<p style="color:Back;">Please enter a date</p>')
 
 with st.form(key='params_for_api'):
-    date_to_predict = st.date_input(date_title, value=datetime(2022,12,2))# min_value=today, max_value=max_day)
+    ''' ## Please choose date '''
+    date_to_predict = st.date_input('Please enter a date', value=datetime(2022,12,2), label_visibility='hidden')# min_value=today, max_value=max_day)
     bt1 = st.form_submit_button('Make prediction')
 
 date_to_pick = date_to_predict.strftime("%Y-%m-%d")
