@@ -44,7 +44,7 @@ max_day = today + td
 
 with st.form(key='params_for_api'):
     select_title = '<p style="color:Black; font-size: 30px;">Please choose date</p>'
-    st.markdown = (select_title)
+    st.markdown(select_title, unsafe_allow_html=True)
     date_to_predict = st.date_input('Please enter a date', value=datetime(2022,12,2), label_visibility='hidden')# min_value=today, max_value=max_day)
     bt1 = st.form_submit_button('Make prediction')
 
