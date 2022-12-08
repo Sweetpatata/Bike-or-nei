@@ -13,7 +13,7 @@ st.set_page_config(layout='wide')
 #background image
 def add_bg_from_url():
    st.markdown(
-        f'''
+        f"""
         <style>
         .stApp {{
             background-image: url("https://storage.googleapis.com/sweet_bucket/pexels-madison-inouye-1831234.jpg");
@@ -21,7 +21,7 @@ def add_bg_from_url():
             background-size: cover
         }}
         </style>
-        ''',
+        """,
         unsafe_allow_html=True
     )
 
