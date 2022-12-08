@@ -16,7 +16,7 @@ def add_bg_from_url():
         f"""
         <style>
         .stApp {{
-            background-image: url("https://storage.googleapis.com/sweet_bucket/pexels-madison-inouye-1831234.jpg");
+            background-image: url("https://storage.googleapis.com/sweet_bucket/pexels-engin-akyurt-1435752(1).jpg");
             background-attachment: fixed;
             background-size: cover
         }}
