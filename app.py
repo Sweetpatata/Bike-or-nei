@@ -44,7 +44,7 @@ td = timedelta(days=5)
 max_day = today + td
 
 with st.form(key='params_for_api'):
-    date_to_predict = st.date_input('Please enter a date', value=today, min_value=datetime(2022,12,2), max_value=max_day)
+    date_to_predict = st.date_input('Please choose a date', value=today, min_value=datetime(2022,12,2), max_value=max_day)
     bt1 = st.form_submit_button('Make prediction')
 
 date_to_pick = date_to_predict.strftime("%Y-%m-%d")
